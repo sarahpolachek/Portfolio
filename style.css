@@ -138,10 +138,11 @@ a {
 
 @media only screen and (min-width: 768px) {
     #leftSection {
-        margin-left: 12%; /* <- your value here */
+        margin-left: 16.66%; /* <- your value here */
      }
      #rightSection {
-        margin-left: 12%; /* <- your value here */
+        margin-left:4.15%; /* <- your value here */
+        margin-top:1%;
      }
  }
 
