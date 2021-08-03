@@ -8,6 +8,8 @@
 html {
     font-size: 62.5%;
     font-family: 'monospace', sans-serif;
+    overflow-x: hidden;
+    width:100%
 }
 
 li {
@@ -96,7 +98,7 @@ a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -133,6 +135,15 @@ a {
     }
 }
 
+
+@media only screen and (min-width: 768px) {
+    #leftSection {
+        margin-left: 12%; /* <- your value here */
+     }
+ }
+
+
+
 .movedown{
     margin-top:15px;
 }
@@ -159,6 +170,7 @@ a {
 
 .container-fluid {
     background:#E2D9DA;
+    width:100%;
     
 }
 
