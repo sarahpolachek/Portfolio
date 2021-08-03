@@ -149,6 +149,9 @@ a {
     .title {
         font-size: 20px;
     }
+    #rightSection {
+        padding: 0 5px 0 5px;
+    }
  }
 
 
