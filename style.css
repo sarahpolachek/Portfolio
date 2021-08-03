@@ -140,6 +140,9 @@ a {
     #leftSection {
         margin-left: 12%; /* <- your value here */
      }
+     #rightSection {
+        margin-left: 12%; /* <- your value here */
+     }
  }
 
 
