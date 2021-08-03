@@ -146,8 +146,8 @@ a {
  }
 
  @media only screen and (min-width: 320px) and (max-width:480px) {
-    .title {
-        font-size: 20px;
+    .title a {
+        font-size: 18px;
     }
     #rightSection {
         padding: 0 10px 0 10px;
