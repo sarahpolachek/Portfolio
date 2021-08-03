@@ -4,3 +4,5 @@ My Wix site can be found [here](https://sarahpolachek.wixsite.com/portfolio)
 This new site is a work in progress.  
 Everything here, has been coded from scratch or by using code snippets through online research.
 Bootstrap and CSS flex are used for the layout.
+
+This site is being hosted by Netlify.  Check it out [here](https://sarahpolachek.netlify.app/)
