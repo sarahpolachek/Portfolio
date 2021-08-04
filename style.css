@@ -75,12 +75,14 @@ a {
     text-transform:uppercase;
 }
 
-.nav-item a:hover{
+.active, .nav-item a:hover{
     color: #E82727;
     font-weight: bold;
 }
 
-.nav-link{
+
+
+/*.nav-link{
     font-size: 20px;
     text-decoration:none;
     color: rgb(53, 53, 53);
@@ -91,7 +93,8 @@ a {
 .nav-link:hover{
     color: #E82727;
     font-weight: bold;
-}
+}*/
+
 
 
 @media only screen and (max-width: 768px) {
@@ -142,7 +145,7 @@ a {
      }
      #rightSection {
         margin-left:4.15%; /* <- your value here */
-        margin-top:1%;
+        
      }
  }
 
@@ -168,8 +171,8 @@ a {
 }
 .title a:hover{
     color: rgb(53, 53, 53);
-
 }
+
 .mini-title {
     font-size:14px;
     color: #000000;
@@ -186,6 +189,12 @@ a {
 
 .front-page{
     width:75%;
+    border-radius: 50%;
+    margin:20px 0 20px 0;
+}
+
+.about-picture{
+    width:50%;
     border-radius: 50%;
     margin:20px 0 20px 0;
 }
@@ -219,7 +228,8 @@ hr {
     margin: 10px;
     border-radius:10px;
     border:none;
-
+    color:white;
+    font-size:14px;
     
     cursor: pointer;
     outline: none;
@@ -254,3 +264,132 @@ hr {
  footer {
     padding:40px;
  }
+
+ /*about page CSS*/
+
+.aboutWhiteBox {
+    background:white;
+    padding:15px;
+    border-radius: 0px 20px 0px 20px ;
+    margin:auto;
+    margin-top:10px;
+}
+
+.aboutText {
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+.socialButtons {
+    margin-top:20px;
+}
+.contact {
+    margin-top:40px;
+}
+
+.contactItems {
+    margin:auto 0;
+    padding:40px;
+    
+}
+
+.contactHeader {
+    font-family: "monospace", sans-serif;
+    font-size:25px;
+    padding-bottom:20px;
+}
+
+.contactHeadText {
+  
+    font-family:'Courier New', Courier, monospace;
+    font-size:15px;
+}
+
+.contactMainText {
+    
+    font-family: "monospace", sans-serif;
+    font-size:25px;
+}
+
+.contactMainText a {
+    
+    font-family: "monospace", sans-serif;
+    font-size:25px;
+    color: rgb(47, 47, 47);
+}
+.contactMainText a:hover {
+    
+    font-family: "monospace", sans-serif;
+    font-size:25px;
+    color: #E82727;
+}
+
+.contactWhiteBox {
+    background:white;
+    width:90%;
+    
+    border-radius: 0px 20px 0px 20px ;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+/*form*/
+form {
+    margin:0 auto;
+    padding:25px;   
+
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  form li + li {
+    margin-top: 10px;
+  }
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size:18px;
+  }
+
+  input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font-family: "monospace", sans-serif;
+    font-size:18px;
+    padding:10px;
+    border-radius: 5px;
+  /* Uniform text field size */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid rgb(82, 82, 82);
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #E82727;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    
+    /* Provide space to type some text */
+    height: 100px;
+  }
+
+ 
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin:auto;
+
+  }
