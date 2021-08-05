@@ -17,6 +17,8 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+
 /*// Get the container element
 var btnContainer = document.getElementById("navbar");
 

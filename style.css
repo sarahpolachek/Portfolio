@@ -139,14 +139,29 @@ a {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     #leftSection {
         margin-left: 16.66%; /* <- your value here */
+        padding:0;
      }
      #rightSection {
         margin-left:4.15%; /* <- your value here */
-        
      }
+
+ }
+
+ @media only screen and (min-width: 580px) and (max-width:770px) {
+    .aboutText{
+        font-size:12px;
+    }
+    #leftSection {
+        margin-left: 16.66%; /* <- your value here */
+        padding:0;
+     }
+     #rightSection {
+        margin-left:4.15%; /* <- your value here */
+     }
+
  }
 
  @media only screen and (min-width: 320px) and (max-width:480px) {
@@ -157,6 +172,7 @@ a {
         padding: 0 10px 0 10px;
     }
  }
+
 
 
 .movedown{
@@ -283,6 +299,46 @@ hr {
 .socialButtons {
     margin-top:20px;
 }
+
+@keyframes fadeIn0 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#fadeIn0 {
+    animation: 2s ease-in 0s 1 fadeIn0;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#fadeIn1 {
+    animation: 3s ease-in 0s 1 fadeIn1;
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#fadeIn2 {
+    animation: 4s ease-in 0s 1 fadeIn2;
+}
+
+
+/*contact page*/
+
 .contact {
     margin-top:40px;
 }
@@ -317,13 +373,14 @@ hr {
     
     font-family: "monospace", sans-serif;
     font-size:25px;
-    color: rgb(47, 47, 47);
+    
+    color: #E82727;
 }
 .contactMainText a:hover {
     
     font-family: "monospace", sans-serif;
     font-size:25px;
-    color: #E82727;
+    color: rgb(47, 47, 47);
 }
 
 .contactWhiteBox {
@@ -333,6 +390,52 @@ hr {
     border-radius: 0px 20px 0px 20px ;
     margin:auto;
     margin-bottom:20px;
+}
+
+.card-title {
+    font-size:16px;
+}
+
+.card-text {
+    font-size:12px;
+}
+/*work page animation slide in*/
+
+@keyframes slideInFromRight0 {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight1 {
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight2 {
+    0% {
+        transform: translateX(400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#animateProjects0 {
+    animation: 2s ease-out 0s 1 slideInFromRight0;
+}
+#animateProjects1 {
+    animation: 2s ease-out 0s 1 slideInFromRight1;
+}
+#animateProjects2 {
+    animation: 2s ease-out 0s 1 slideInFromRight2;
 }
 
 
@@ -397,3 +500,5 @@ textarea {
     margin:auto;
 
   }
+
+
