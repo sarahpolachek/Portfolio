@@ -295,8 +295,10 @@ hr {
 
 .contactHeader {
     font-family: "monospace", sans-serif;
-    font-size:25px;
-    padding-bottom:20px;
+    font-size:23px;
+    padding:20px;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .contactHeadText {
@@ -332,6 +334,8 @@ hr {
     margin:auto;
     margin-bottom:20px;
 }
+
+
 
 /*form*/
 form {
