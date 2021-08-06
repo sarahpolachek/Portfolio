@@ -504,3 +504,68 @@ textarea {
   }
 
 
+/*cafe cravings css grid 
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-rows: auto;
+    gap: 5px;
+    background: #E2D9DA;
+
+}
+
+.topLeftText{
+    background-color: #6699ff;
+    grid-column: span 4;
+    grid-row:span 1;
+    padding:10px;
+    text-align:left;
+    
+}
+.topRightText{
+    background-color: #f266ff;
+    grid-column: span 8;
+    
+    grid-row: span 1;
+    padding:20px 10px 10px 10px;
+    text-align:right;
+}
+
+
+.menuImagesLeft{
+    grid-column: span 4;
+    
+    grid-row: 2 / span 1;
+    text-align:center;
+    
+}
+.menuImagesRight{
+    grid-column: span 8;
+    
+    grid-row: 2 / span 1;
+    text-align:center;
+    
+}
+
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 12 /-1;
+}
+
+.coffeeMenu {
+    width: 75%;
+}
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    align-items:center;
+    padding-left:30px;
+    padding-right:30px;
+    margin:auto;
+    height: 125px;
+}
+*/
