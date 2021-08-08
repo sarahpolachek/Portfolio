@@ -1,174 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+* {
+    box-sizing: border-box;
+}
 
 body {
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-  
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
-html {
-    font-size: 62.5%;
-    font-family: 'monospace', sans-serif;
-    overflow-x: hidden;
-    width:100%
+.bg {
+    background: url('assets/austinChanMedium.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:-30px;
+    left:-30px;
+    width:calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index:-1;
+    filter: blur(0px);
+    
 }
 
-li {
-    list-style: none;
+.loading-text{
+    font-size:75px;
+    color:black;
+    top: 0;
+    left: 0;
+    
 }
 
-a {
+.enterButton {
+    font-size:25px;
+    background-color: rgb(53, 53, 53);
+    border-radius:7px;
+    padding: 10px;
+    border:none;
+
+    position: absolute;
+    filter: opacity(100);
+}
+
+.enterButton a {
+    font-size:25px;
+    color:#ffffff;
     text-decoration: none;
 }
-
-.header{
-    box-shadow: 0 4px 2px -2px gray;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    align-items:center;
-    padding-left:30px;
-    padding-right:30px;
-    margin:auto;
-    height: 125px;
-}
-
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item {
-    margin-left: 5rem;
-    list-style: none;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    color: black;
-}
-
-
-.nav-item a{
-    font-size: 14px;
-    text-decoration:none;
-    color: rgb(53, 53, 53);
-    padding: 3rem;
-    text-transform:uppercase;
-}
-
-.active, .nav-item a:hover{
-    color: #E82727;
-    font-weight: bold;
-}
-
-
-
-/*.nav-link{
-    font-size: 20px;
-    text-decoration:none;
-    color: rgb(53, 53, 53);
-    padding: 3rem;
-    text-transform:uppercase;
-}
-
-.nav-link:hover{
-    color: #E82727;
-    font-weight: bold;
-}*/
-
-
-
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        z-index: 1;
-        left: -100%;
-        top: 8rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-.movedown{
-    margin-top:15px;
-}
-
-.title a{
-    color: #E82727;
-    font-weight:bold;
-    font-size:35px;
-
-}
-.title a:hover{
-    color: rgb(53, 53, 53);
-}
-
-.mini-title {
-    font-size:14px;
-    color: #000000;
+.enterButton a:hover {
+    color:#E82727;
 }
