@@ -39,7 +39,7 @@ body {
     font-size:24 px;
     position: absolute;
     bottom:75px;
-    left:20px;
+    left:10px;
     margin:0;
     opacity:0;
     background-color:white;
@@ -62,10 +62,11 @@ body {
     position: absolute;
     bottom:10px;
     left:10px;
+    right:10px;
     margin:0;
     opacity:0;
     background-color:white;
-    padding:10px;
+    padding:5px;
     border-radius:10px;
     border: 1px solid black;
 }
@@ -81,12 +82,15 @@ body {
 
 @media(max-width:480px) {
     .container {
-        
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 100vw;
     }
 
     .panel {
         flex-direction: column;
+        flex-wrap:wrap;
         width:100vw;
         flex:0.5;
     }
