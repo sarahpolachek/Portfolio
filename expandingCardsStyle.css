@@ -62,11 +62,10 @@ body {
     position: absolute;
     bottom:10px;
     left:10px;
-    right:10px;
     margin:0;
     opacity:0;
     background-color:white;
-    padding:5px;
+    padding:10px;
     border-radius:10px;
     border: 1px solid black;
 }
@@ -82,21 +81,7 @@ body {
 
 @media(max-width:480px) {
     .container {
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         width: 100vw;
-    }
-
-    .panel {
-        flex-direction: column;
-        flex-wrap:wrap;
-        width:100vw;
-        flex:0.5;
-    }
-
-    .panel.active {
-        flex: 5;
     }
 
     .panel:nth-of-type(4),.panel:nth-of-type(5) {
