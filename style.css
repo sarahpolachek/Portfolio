@@ -373,6 +373,7 @@ hr {
     padding:20px;
     margin: auto;
     margin-bottom: 40px;
+    font-weight:bold;
 }
 
 .contactHeadText {
@@ -417,11 +418,11 @@ hr {
 .card-text {
     font-size:12px;
 }
-/*work page animation slide in*/
+/*work page animation top slide in from right*/
 
 @keyframes slideInFromRight0 {
     0% {
-        transform: translateX(200%);
+        transform: translateX(500%);
     }
     100% {
         transform: translateX(0);
@@ -430,7 +431,7 @@ hr {
 
 @keyframes slideInFromRight1 {
     0% {
-        transform: translateX(300%);
+        transform: translateX(600%);
     }
     100% {
         transform: translateX(0);
@@ -439,7 +440,7 @@ hr {
 
 @keyframes slideInFromRight2 {
     0% {
-        transform: translateX(400%);
+        transform: translateX(700%);
     }
     100% {
         transform: translateX(0);
@@ -447,13 +448,52 @@ hr {
 }
 
 #animateProjects0 {
-    animation: 2s ease-out 0s 1 slideInFromRight0;
+    animation: 2s ease-out 0s 1 both slideInFromRight0;
 }
 #animateProjects1 {
-    animation: 2s ease-out 0s 1 slideInFromRight1;
+    animation: 2s ease-out 0s 1 both slideInFromRight1;
 }
 #animateProjects2 {
-    animation: 2s ease-out 0s 1 slideInFromRight2;
+    animation: 2s ease-out 0s 1 both slideInFromRight2;
+}
+
+/*work page animation bottom slide in from left*/
+
+@keyframes slideInFromLeftA {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftB {
+    0% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftC {
+    0% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#animateProjectsA {
+    animation: 2s ease-out 2s 1 both slideInFromLeftA;
+}
+#animateProjectsB {
+    animation: 2s ease-out 2s 1 both slideInFromLeftB;
+}
+#animateProjectsC {
+    animation: 2s ease-out 2s 1 both slideInFromLeftC;
 }
 
 
