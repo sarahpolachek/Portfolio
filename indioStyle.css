@@ -19,7 +19,7 @@
 }
 
 #indioTitle {
-    border-bottom: 2px solid #E82727;
+    border-bottom: 2px solid #d8761a;
     grid-area: indioTitle;
     padding:15px;
     margin:40px;
@@ -114,19 +114,11 @@ h1, h2 {
         color:black;
 }
 
-h2 a:link {
-    color:#E82727;
-}
-h2 a:hover{
-    color: rgb(53, 53, 53);
-}
-h2 a:visited {
-    color: rgb(139, 79, 149);
-}
+
 
 h3 {
     font-family: 'monospace', sans-serif;
-        color:#E82727;
+        color:#d8761a;
 }
 
 
@@ -145,7 +137,7 @@ p, li {
 
 
 #footer {
-    border-top: 2px solid #E82727;
+    border-top: 2px solid #16bcda;
     grid-area:footer;
 }
 

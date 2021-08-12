@@ -92,7 +92,7 @@ a {
 }
 
 .active, .nav-item a:hover{
-    color: #E82727;
+    color: #16bcda;
     font-weight: bold;
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 .title a{
-    color: #E82727;
+    color: #16bcda;
     font-weight:bold;
     font-size:35px;
 
@@ -216,7 +216,7 @@ a {
 /* Container of home page*/
 
 .container-fluid {
-    background:#E2D9DA;
+    background:#fff9d9;
     width:100%;
     
 }
@@ -240,7 +240,7 @@ hr {
     margin:auto;
     margin-top:20px;
     margin-bottom:20px;
-    color:#E82727;
+    color:#16bcda;
  }
 
  .social-icon {
@@ -257,7 +257,7 @@ hr {
  }
 
  .burgundyButton {
-    background-color:#593640;
+    background-color:#16bcda;
     padding: 4px 20px 4px 20px;
     margin: 10px;
     border-radius:10px;
@@ -278,7 +278,7 @@ hr {
  }
  
  .burgundyButton:hover{
-    background-color: #E82727;
+    background-color: #16bcda;
     box-shadow: 7px 6px 10px 1px rgba(0, 0, 0, 0.24);
  }
 
@@ -311,7 +311,7 @@ hr {
 
 .aboutText {
     margin-top:35px;
-    margin-bottom:35px;
+    margin-bottom:35px; 
 }
 
 .socialButtons {
@@ -393,7 +393,7 @@ hr {
     font-family: "monospace", sans-serif;
     font-size:25px;
     
-    color: #E82727;
+    color: #16bcda;
 }
 .contactMainText a:hover {
     
@@ -540,7 +540,7 @@ textarea {
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
-  border-color: #E82727;
+  border-color: #16bcda;
 }
 
 textarea {
