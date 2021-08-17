@@ -3,13 +3,14 @@
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
-    grid-template-areas:
+    grid-template-areas: 
     "cafeTitle cafeTitle cafeTitle cafeTitle"
     "image1 image1 image2 image2"
     "SB1 SB2 SB4 SB3"
     "image3 image3 image4 image4"
     "footer footer footer footer";
     grid-gap: 0.5rem;
+    
     
 
 }

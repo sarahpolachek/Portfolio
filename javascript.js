@@ -4,8 +4,8 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
 const navLink = document.querySelectorAll(".nav-link");
@@ -13,8 +13,29 @@ const navLink = document.querySelectorAll(".nav-link");
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
+
+const boxes = document.querySelectorAll('.box');
+
+window.addEventListener('scroll', checkBoxes)
+
+checkBoxes()
+
+function checkBoxes() {
+  const triggerBottom = window.innerHeight / 5 * 4
+
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top
+
+    if (boxTop < triggerBottom) {
+      box.classList.add('show')
+    } else {
+      box.classList.remove('show')
+    }
+  })
 }
 
 

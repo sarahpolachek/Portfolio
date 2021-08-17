@@ -184,7 +184,7 @@ a {
 
  @media only screen and (min-width: 320px) and (max-width:480px) {
     .title a {
-        font-size: 16px;
+        font-size: 14px;
     }
     #rightSection {
         padding: 0 10px 0 10px;
@@ -425,11 +425,11 @@ hr {
     margin-bottom:20px;
 }
 
-.card-title {
+.card-title a {
     font-size:16px;
 }
 
-.card-text {
+.card-text a {
     font-size:12px;
 }
 /*work page animation top slide in from right*/
@@ -510,6 +510,11 @@ hr {
     animation: 2s ease-out 2s 1 both slideInFromLeftC;
 }
 
+
+.card:hover{
+    transition: .5s ease-in-out;
+    transform:scale(1.1);
+}
 
 
 /*form*/

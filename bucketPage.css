@@ -1,0 +1,216 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
+    grid-template-areas: 
+    "headTitle headTitle headTitle headTitle"
+    "project1 project1 projecttext1 projecttext1"
+    "projecttext2 projecttext2 project2 project2 "
+    "project3 project3 projecttext3 projecttext3"
+    "projecttext4 projecttext4 project4 project4"
+    "footer footer footer footer";
+    grid-gap: 0.3rem;
+    justify-content: center;
+}
+.container h1{
+    padding:10px;
+    font-weight:bold;
+    color:#16bcda;
+}
+.container p {
+    font-size:18px;
+    padding:10px;
+}
+.container div {
+    margin: 20px 0 20px 0;
+
+}
+
+.container h1:hover {
+    color: rgb(53, 53, 53);
+
+}
+.headerBlueBox {
+    background:#16bcda;
+    border-radius: 0px 20px 0px 20px ;
+    
+}
+.headBlueTitle {
+    font-family: "monospace", sans-serif;
+    font-size:23px;
+    padding:20px;
+    margin-bottom: 40px;
+    font-weight:bold;
+    color:white;
+}
+
+#headTitle {
+    width: 50%;
+    grid-area: headTitle;
+    padding:15px;
+    text-align: center;
+    margin: auto;
+}
+
+#project1 {
+    grid-area: project1;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#projecttext1 {
+    grid-area: projecttext1;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:25px;
+    box-shadow:4px 4px 2px  rgba(0,0,0,0.3);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+
+
+#project2 {
+    grid-area: project2;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projecttext2 {
+    grid-area: projecttext2;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:25px;
+    box-shadow:-4px -4px 2px rgba(0,0,0,0.3);
+    border-radius: 10px 0px 0px 10px ;
+}
+
+#project3 {
+    grid-area: project3;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#projecttext3 {
+    grid-area: projecttext3;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:25px;
+    box-shadow:4px 4px 2px  rgba(0,0,0,0.3);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+#project4 {
+    grid-area: project4;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projecttext4 {
+    grid-area: projecttext4;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:25px;
+    box-shadow:-4px -4px 2px rgba(0,0,0,0.3);
+    border-radius: 10px 0px 0px 10px ;
+}
+
+
+.box {
+    transform:translateX(225%);
+    transition: transform 1.5s ease;
+}
+
+.box:nth-of-type(even) {
+    transform:translateX(-200%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size:45px;
+}
+
+
+
+
+
+h1, h2 {
+    font-family: 'monospace', sans-serif;
+        color:black;
+}
+
+
+
+
+p, li {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color:black;
+    font-size:14px;
+ }
+
+
+
+
+#footer {
+    border-top: 2px solid #16bcda;
+    grid-area:footer;
+}
+
+@media only screen and (min-width: 551px) and (max-width:991px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "headTitle"
+        "project1"
+        "projecttext1"
+        "project2"
+        "projecttext2"
+        "project3"
+        "projecttext3"
+        "project4"
+        "project4text"
+        "footer";
+         
+    }
+    
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "headTitle"
+        "project1"
+        "projecttext1"
+        "project2"
+        "projecttext2"
+        "project3"
+        "projecttext3"
+        "project4"
+        "projecttext4"
+        "footer";
+         
+    }
+    
+}
