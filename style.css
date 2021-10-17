@@ -184,6 +184,13 @@ a {
     #rightSection {
         padding: 0 10px 0 10px;
     }
+    
+    .about-picture{
+        width:65%;
+        border-radius: 25%;
+        margin:20px 0 20px 0;
+        padding: 20px;
+    }
  }
 
 
@@ -231,15 +238,16 @@ a {
 }
 
 .front-page{
-    width:75%;
-    border-radius: 50%;
+    width:60%;
+    border-radius: 25%;
     margin:20px 0 20px 0;
 }
 
 .about-picture{
-    width:50%;
-    border-radius: 50%;
+    width:45%;
+    border-radius: 25%;
     margin:20px 0 20px 0;
+    padding: 20px;
 }
 
 hr {
