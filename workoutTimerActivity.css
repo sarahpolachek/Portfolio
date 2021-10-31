@@ -5,11 +5,11 @@
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
     grid-template-areas: 
     "titleSection titleSection titleSection titleSection"
-    "question1 question1 question1 question1"
-    "question2 question2 question2 question2"
-    "question3 question3 question3 question3"
-    "question4 question4 question4 question4"
-    "question5 question5 question5 question5"
+    "extra1 question1 question1 extra2"
+    "extra3 question2 question2 extra4"
+    "extra5 question3 question3 extra6"
+    "extra7 question4 question4 extra8"
+    "extra9 question5 question5 extra10"
     "image1 image2 image3 image4"
     "footer footer footer footer";
     grid-gap: 0.5rem;
@@ -142,7 +142,26 @@ padding: 15px;
     margin-bottom:25px;
 }
 
-
+#extra1 {
+    grid-area: extra1;
+    padding:15px;
+}
+#extra2 {
+    grid-area: extra2;
+    padding:15px;
+}
+#extra3 {
+    grid-area: extra3;
+    padding:15px;
+}
+#extra4 {
+    grid-area: extra4;
+    padding:15px;
+}
+#extra5 {
+    grid-area: extra5;
+    padding:15px;
+}
 
 
 h1, h2 {

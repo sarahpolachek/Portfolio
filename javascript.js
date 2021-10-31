@@ -39,6 +39,15 @@ function checkBoxes() {
 }
 
 
+const toggles = document.querySelectorAll('.faqToggle');
+
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.parentNode.classList.toggle('active')
+  });
+})
+
+
 /*// Get the container element
 var btnContainer = document.getElementById("navbar");
 
