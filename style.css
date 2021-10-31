@@ -229,6 +229,23 @@ a {
     color: rgb(47, 47, 47);
 }
 
+#sherpa6 {
+    grid-area: sherpa6;
+    width: 60%;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+    
+}
+
+#sherpa6 p {
+    font-size:12px;
+    text-align:left;
+    color:black;
+    font-weight:normal;
+}
 
 /* Container of home page*/
 
@@ -533,8 +550,8 @@ hr {
 
 
 .faq {
-    background-color:transparent;
-    border: 1px solid #9fa4a8;
+    background-color:#16bdda2d;
+    border: 1px solid #16bcda;
     border-radius:10px;
     
     padding: 30px;
@@ -553,6 +570,7 @@ hr {
     font-size:20px;
     font-weight: bold;
     text-align:center;
+display:inline-block;
   
 }
 
@@ -577,13 +595,15 @@ hr {
     background: transparent;
     border: 0;
     cursor: pointer;
-    display: end;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-    font-size:16px;
+    font-size:20px;
     padding:0;
-    
+    color: #16bcda;
     border-radius: 50%;
+    float: right;
+
 }
 
 .faqToggle:focus {
