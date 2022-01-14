@@ -145,6 +145,12 @@ width:100%;
     font-size: 12px;
     margin: 0;
 }
+
+.videoSize {
+    width: 560px;
+    height: 315px;
+}
+
 .container{
     display: grid;
     height: 100vh;
@@ -189,6 +195,11 @@ width:100%;
         "section39"
         "footer";
     }   
+
+    .videoSize {
+        width: 300px;
+        height: 170px;
+    }
 }
 
 @media only screen and (max-width:550px) {
@@ -212,6 +223,11 @@ width:100%;
         "section39"
         "footer";  
     } 
+
+    .videoSize {
+        width: 300px;
+        height: 170px;
+    }
 }
 
 
