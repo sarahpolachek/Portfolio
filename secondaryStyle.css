@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size:62.5%;
+    font-family: 'Roboto,' sans-serif;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+    background-color: #212121;
+    color:white;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.header{
+    border-bottom: .2rem solid #0d7377;
+    box-shadow:
+            0 0.62rem 1.688rem 0 #000000;
+    margin: auto 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width:100%;
+    padding: 2rem 2.5rem;
+    background-color:#323232;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.313rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #8de0d9;
+}
+
+.active {
+    color: #8de0d9;
+}
+
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #212121;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+}
+
+
+
+.jobTitle {
+    color:#8de0d9;
+    font-size: 12px;
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
+    grid-template-areas: 
+    "section1 section2 section2 section3"
+    "section4 section5 section5 section6"
+    "section7 section8 section8 section9"
+    "section10 section11 section11 section12"
+    "section13 section14 section15 section16"
+    "section17 section18 section18 section19"
+    "section20 section21 section21 section22"
+    "section23 section24 section24 section25"
+    "section26 section27 section27 section28"
+    "section29 section30 section30 section31"
+    "section32 section33 section33 section34"
+    "section35 section36 section36 section37"
+    "section38 section39 section39 section40"
+    "footer footer footer footer";
+    grid-gap: 0.5rem;
+}
+
+@media only screen and (min-width: 551px) and (max-width:991px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "section2"
+        "section5"
+        "section8"
+        "section11"
+        "section14"
+        "section15"
+        "section18"
+        "section21"
+        "section24"
+        "section27"
+        "section30"
+        "section33"
+        "section36"
+        "section39"
+        "footer";
+    }   
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "section2"
+        "section5"
+        "section8"
+        "section11"
+        "section14"
+        "section15"
+        "section18"
+        "section21"
+        "section24"
+        "section27"
+        "section30"
+        "section33"
+        "section36"
+        "section39"
+        "footer";  
+    } 
+}
+
+
+
+#section2 {
+    grid-area: section2;
+    padding:15px;
+    margin-top:15px;
+    color:white;
+    background-color:#0d7377;
+    text-align:left;
+    justify-content: center;
+}
+
+
+
+#section5 {
+    grid-area: section5;
+    padding:15px;
+
+    color:white;
+    background-color:none;
+    text-align:center;
+
+}
+
+
+#section8 {
+    grid-area: section8;
+    padding:15px;
+
+    color:white;
+    background-color:none;
+    text-align:left;
+}
+
+
+#section11 {
+    grid-area: section11;
+    padding:15px;
+    color:white;
+    background-color:none;
+    text-align:left;
+}
+
+#section14 {
+    grid-area: section14;
+    padding:15px;
+    margin:15px;
+    color:white;
+    background-color:#212121;
+    text-align:center;
+    border: 2px solid #0d7377;
+}
+#section15 {
+    grid-area: section15;
+    padding:15px;
+    margin:15px;
+    color:white;
+    background-color:#212121;
+    text-align:center;
+    border: 2px solid #0d7377;
+}
+#section18 {
+    grid-area: section18;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+
+}
+
+#section21 {
+    grid-area: section21;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+
+
+}
+
+#section24 {
+    grid-area: section24;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+
+}
+
+#section27 {
+    grid-area: section27;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+
+
+}
+
+#section30 {
+    grid-area: section30;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+}
+
+#section33 {
+    grid-area: section33;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+}
+#section36 {
+    grid-area: section36;
+    padding:15px;
+ 
+    color:white;
+    background-color:#212121;
+}
+#section39 {
+    grid-area: section39;
+    padding:15px;
+
+    color:white;
+    background-color:#212121;
+}
+#footer {
+    grid-area: footer;
+    padding:15px;
+    color:white;
+    background-color:#0d7377;
+    text-align:center;
+    width:100%;
+}
+
+p, li{
+    font-size:13px;
+    line-height:1.5;
+    text-align: left;
+}
+
+.aboutImage {
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size:14px;
+    font-weight:none;
+}
+
+.footerIcons {
+    color:#ffffff;
+    padding:15px;
+    margin-top:10px;
+}

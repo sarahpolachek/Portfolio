@@ -1,8 +1,5 @@
-This project is to recreate my portfolio website that I originally created using Wix.  
-My Wix site can be found [here](https://sarahpolachek.wixsite.com/portfolio)
+style.css is used for index.html
 
-This new site is a work in progress.  
-Everything here, has been coded from scratch or by using code snippets through online research.
-Bootstrap and CSS flex are used for the layout.
+secondarystyle.css - I created this to have an option to layout pages differently than the style.css used for index.html
 
-This site is being hosted by Netlify.  Check it out [here](https://sarahpolachek.netlify.app/)
+I am thinking I will need project specific css if I want to continue using grid templates.  I should look at learning using more number based grids to see if they will be more reusable across different pages.  

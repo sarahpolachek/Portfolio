@@ -1,19 +1,18 @@
-const boxes = document.querySelectorAll('.box');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-window.addEventListener('scroll', checkBoxes)
+hamburger.addEventListener("click", mobileMenu);
 
-checkBoxes()
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
-function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+const navLink = document.querySelectorAll(".nav-link");
 
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-        if (boxTop < triggerBottom) {
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
-    })
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
