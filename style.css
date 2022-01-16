@@ -140,8 +140,6 @@ width:100%;
 
 }
 
-
-
 .jobTitle {
     color:#8de0d9;
     font-size: 12px;
@@ -151,8 +149,9 @@ width:100%;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
+    "title1 title2 title2 title3"
     "section1 section2 section3 section4"
     "section5 section6 section7 section8"
     "section9 section10 section11 section12"
@@ -165,6 +164,7 @@ width:100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
+        "title2"
         "section2"
         "section3"
         "section6"
@@ -180,6 +180,7 @@ width:100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
+        "title2"
         "section2"
         "section3"
         "section6"
@@ -191,19 +192,33 @@ width:100%;
     } 
 }
 
-#section1 {
-    grid-area: section1;
+
+
+.indexImages img{
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  #title2 {
+    grid-area: title2;
     padding:15px;
-    color:#ffffff;
+    margin-top:15px;
+    color:white;
+    background-color:#0d7377;
+    text-align:left;
+    justify-content: center;
 }
 
 #section2 {
     grid-area: section2;
- 
+
     margin:15px;
     color:white;
     background-color:#212121;
     text-align:center;
+
     box-shadow:
             0 0.62rem 1.688rem 0 #000000;
 }
@@ -223,7 +238,7 @@ width:100%;
     grid-area: section3;
     margin:15px;
     color:white;
-    background-color:#323232;
+    background-color:#212121;
     text-align:center;
     box-shadow:
     0 0.62rem 1.688rem 0 #000000;
@@ -241,30 +256,16 @@ width:100%;
    transform: scale(0.95);
 }
 
-#section4 {
-    grid-area: section4;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
 
-#section5 {
-    grid-area: section5;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
 
 #section6 {
     grid-area: section6;
+
     margin:15px;
     color:white;
-    background-color:#323232;
+    background-color:#212121;
     text-align:center;
+    
     box-shadow:
     0 0.62rem 1.688rem 0 #000000;
 }
@@ -279,77 +280,12 @@ width:100%;
   /* Safari */
    transform: scale(0.95);
 }
-#section7 {
-    grid-area: section7;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-#section8 {
-    grid-area: section8;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-#section9 {
-    grid-area: section9;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-#section10 {
-    grid-area: section10;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-#section11 {
-    grid-area: section11;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-#section12 {
-    grid-area: section12;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
 
 
-#section13 {
-    grid-area: section13;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
-
-
-#section14 {
-    grid-area: section14;
-    padding:15px;
-    margin:15px;
-    color:white;
-    background-color:#323232;
-    text-align:center;
-}
 
 #footer {
     grid-area: footer;
+
     padding:20px;
     color:white;
     background-color:#0d7377;

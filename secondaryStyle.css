@@ -138,7 +138,9 @@ width:100%;
 
 }
 
-
+img {
+    width:100%;
+}
 
 .jobTitle {
     color:#8de0d9;
@@ -155,7 +157,7 @@ width:100%;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 1fr ;
+    grid-template-rows: auto ;
     grid-template-areas: 
     "section1 section2 section2 section3"
     "section4 section5 section5 section6"
