@@ -152,7 +152,7 @@ width:100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "title1 title2 title2 title3"
-    "section1 section2 section3 section4"
+    "section1 section2 section2 section4"
     "section5 section6 section7 section8"
     "section9 section10 section11 section12"
     "footer footer footer footer";
@@ -281,7 +281,28 @@ width:100%;
    transform: scale(0.95);
 }
 
+#section7 {
+    grid-area: section7;
 
+    margin:15px;
+    color:white;
+    background-color:#212121;
+    text-align:center;
+    
+    box-shadow:
+    0 0.62rem 1.688rem 0 #000000;
+}
+#section7:hover {
+    -webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -ms-transform: scale(0.95, 0.95);
+  /* IE 9 */
+  -webkit-transform: scale(0.95, 0.95);
+  /* Safari */
+   transform: scale(0.95);
+}
 
 #footer {
     grid-area: footer;
